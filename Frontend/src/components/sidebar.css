@@ -1,0 +1,109 @@
+.contactus{
+    margin-top: 200px;
+}
+.card{
+    border-radius: 10px;
+    border: 1 px solid black;
+    
+}
+.cardd{
+    margin-top: 100px;
+}
+.horizontalcard{
+    width: 70%;
+    align-items: end;
+    justify-content: end;
+ margin-bottom: 5px;
+}
+.verticalcard{
+    margin-right: 8px;
+
+  height: 100px;
+    width: 28%;
+}
+.containerr{
+    display: flex;
+    padding-top: 30px;
+
+}
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+  }
+  .sort{
+   margin-left: 1000px;
+   margin-bottom: -40px;
+  }
+  .group22{
+    padding-top: 40px;
+    
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+  }
+  .input {
+    margin-left: 10px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+  
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #D9E8D8;
+    color: #0d0c22;
+    box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
+    transition: .3s ease;
+  }
+  .input2 {
+    margin-left: 10px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+  
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #e4e4e4;
+    color: #0d0c22;
+    box-shadow: 0 0 5px #343533, 0 0 0 10px #f5f5f5eb;
+    transition: .3s ease;
+  }
+  .input::placeholder {
+    color: #777;
+  }
+  
+  .icons {
+    margin-left: 10px;
+    position: absolute;
+    left: 1rem;
+    fill: #777;
+    width: 1rem;
+    height: 1rem;
+  }
+  .icons2 {
+    margin-left: 10px;
+    position: absolute;
+    left: 1rem;
+    fill: #777;
+    width: 1rem;
+    height: 1rem;
+  }
+
+
+  
+  h1{
+    font-size: 10px;
+  }
+ 
+  body{
+    background-color: #ffffff;
+  }
+  
