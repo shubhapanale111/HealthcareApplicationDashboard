@@ -1,11 +1,4 @@
-.navbar {
-    background-color: rgb(12, 13, 40);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
+
   
   .logo {
     font-size: 24px;
@@ -29,6 +22,170 @@
   .naav{
     margin-top: 40px;
   }
-  
-  /* Add any additional styling you want */
-  
+  /* CustomNavbar.css */
+.navbar {
+  height: 50px;
+  box-shadow: 0px 2px 2px #888;
+  border-bottom: 1px solid #ccc;
+  margin-left: -20px;
+  margin-top: -50px;
+  margin-right: -50px;
+  padding-left: 50px;
+  padding-top: 2cqmin;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: aliceblue;
+  justify-content: space-between;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.name {
+  margin-left: 10px;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+ 
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  .navbar {
+      flex-direction: column; /* Stack elements vertically */
+      padding: 10px;
+  }
+
+  .nav-links {
+      flex-direction: column; /* Stack links vertically */
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* CustomNavbar.css */
+.navbar {
+  height: 50px;
+  box-shadow: 0px 2px 2px #888;
+  border-bottom: 1px solid #ccc;
+  margin-left: -20px;
+  margin-top: -40px;
+  margin-right: -50px;
+  padding-left: 100px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: aliceblue;
+  justify-content: space-between;
+}
+
+.profile-image {
+  padding-top: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 0px;
+
+}
+
+.name {
+  padding-top: 10px;
+  margin-left: 10px;
+  font-size: 10px;
+  color: black;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 12px;
+  padding-left: 28px;
+}
+h2{
+  padding-top: 10px;
+  font-size: 12px;
+  margin-left: -190px;
+  color: black;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+ /* Adjust styles for smaller screens here */
+
+
+.nav-links {
+  flex-direction: column; /* Stack links vertically */
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+.logo {
+font-size: 20px;
+font-weight: bold;
+}
+
+/* CustomNavbar.css */
+.navbar {
+height: 50px;
+box-shadow: 0px 2px 2px #888;
+border-bottom: 1px solid #ccc;
+margin-left: -20px;
+margin-top: -40px;
+margin-right: -50px;
+padding-left: 100px;
+padding-top: 10px;
+display: flex;
+align-items: center;
+padding-bottom: 10px;
+background-color: aliceblue;
+justify-content: space-between;
+}
+
+.profile-image {
+padding-top: 10px;
+border-radius: 50%;
+width: 25px;
+height: 25px;
+margin-left: 280px;
+margin-right: 0px;
+
+}
+
+.name {
+padding-top: 10px;
+margin-left: 10px;
+font-size: 10px;
+color: black;
+}
+
+.center-content {
+display: flex;
+align-items: center;
+flex: 1;
+margin-left: 100px;
+padding-left: 0px;
+}
+h2{
+padding-top: 10px;
+font-size: 12px;
+margin-left: -190px;
+color: black;
+}
+}

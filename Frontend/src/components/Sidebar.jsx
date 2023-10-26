@@ -45,29 +45,42 @@ const Sidebar = ({ children }) => {
     ];
 
     return (
+    
         <div className="container">
-            <div style={{ width: isOpen ? "200px" : "50px" }} className="sidebar">
-                <div className="top_section">
-                    <h1 style={{ display: isOpen ? "block" : "none", fontSize: '22px' }} className="logo">@EHR Safe</h1>
-                </div>
-                {menuItem.map((item, index) => (
-                    <NavLink to={item.path} key={index} className="link" activeClassName="active">
-                        <div className="icon">{item.icon}</div>
-                        <div style={{ display: isOpen ? "block" : "none" }} className="link_text">{item.name}</div>
-                    </NavLink>
-                ))}
-                <div className="bottom_section">
-                    <div style={{ marginLeft: isOpen ? "150px" : "0px" }} className="bars">
-                        {isOpen ? (
-                            <FaChevronCircleLeft onClick={toggle} />
-                        ) : (
-                            <FaChevronCircleRight onClick={toggle} />
-                        )}
-                    </div>
+       <div
+        style={{
+          width: isOpen ? "var(--sidebar-width-open)" : "var(--sidebar-width-closed)",
+        }}
+        className="sidebar"
+      >
+            <div className="top_section">
+            <h1
+            style={{
+              display: isOpen ? 'block' : 'none',
+              fontSize: isOpen ? '12px' : '15px', // Adjust font size for mobile
+            }}
+            className="logo"
+          >
+              @EHR Safe</h1>
+            </div>
+            {menuItem.map((item, index) => (
+                <NavLink to={item.path} key={index} className="link" activeClassName="active">
+                    <div className="icon">{item.icon}</div>
+                    <div className="link_text">{item.name}</div>
+                </NavLink>
+            ))}
+            <div className="bottom_section">
+            <div style={{ marginLeft: isOpen ? "58px" : "0px" }} className="bars">
+                    {isOpen ? (
+                        <FaChevronCircleLeft onClick={toggle} />
+                    ) : (
+                        <FaChevronCircleRight onClick={toggle} />
+                    )}
                 </div>
             </div>
-            <main>{children}</main>
         </div>
+        <main>{children}</main>
+    </div>
     );
 };
 

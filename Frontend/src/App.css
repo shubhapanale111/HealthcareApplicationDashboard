@@ -16,6 +16,9 @@ main{
     height: 100vh;
     width: 200px;
     transition: all 0.5s;
+    --sidebar-width-open: 200px;
+    --sidebar-width-closed: 50px;
+ 
 }
 .top_section{
     margin-top: 10px;
@@ -53,4 +56,37 @@ main{
 .icon, .link_text{
     font-size: 18px;
     margin-top: 10px;
+    margin-left: 5px;
+}
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .top_section {
+        margin-top: 10px;
+        display: flex;
+        align-items:center;
+        padding:10px 8px;
+    }
+    .sidebar{
+        background: #070707ec;
+        color: #fff;
+        height: 140vh;
+        width: 70px;
+        transition: all 0.5s;
+        --sidebar-width-open: 80px;
+        --sidebar-width-closed: 25px;
+    }
+    .bars {
+        margin-left: 0; /* Reset margin on mobile */
+    }
+    .icon, .link_text{
+        font-size: 8px;
+        margin-top: 8px;
+        margin-left: -6px;
+    }
+    .bottom_section{
+        margin-top: 220px;
+        display: flex;
+        align-items:bottom;
+        padding:20px 1px;
+    }
 }
